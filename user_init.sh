@@ -52,12 +52,12 @@ sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree -y
 
 #configure tmux
 cd
-mkdir ~/.tmux.conf
+touch ~/.tmux.conf
 
-echo "unbind r" >> ~/.tmux.conf
-ehco "bind r source-file ~/.tmux.conf" >> ~/.tmux.conf
+echo "unbind r" > ~/.tmux.conf
+echo "bind r source-file ~/.tmux.conf" >> ~/.tmux.conf
 echo "" >> ~/.tmux.conf
-echo"set -g prefix C-s" >> ~/.tmux.conf
+echo "set -g prefix C-s" >> ~/.tmux.conf
 echo "" >> ~/.tmux.conf
 echo "# Navigate panes with Alt + arrow keys (no prefix)" >> ~/.tmux.conf
 echo "bind -n M-Left select-pane -L" >> ~/.tmux.conf
