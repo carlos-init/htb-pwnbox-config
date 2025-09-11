@@ -65,6 +65,8 @@ echo "bind -n M-Right select-pane -R" >> ~/.tmux.conf
 echo "bind -n M-Up select-pane -U" >> ~/.tmux.conf
 echo "bind -n M-Down select-pane -D" >> ~/.tmux.conf
 
+tmux source ~/.tmux.conf
+
 
 
 
