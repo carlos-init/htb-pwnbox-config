@@ -49,6 +49,7 @@ git clone https://github.com/urbanadventurer/username-anarchy.git
 git clone https://github.com/kmahyyg/mremoteng-decrypt.git
 cd 
 sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree gpp-decrypt pdfid -y
+pip install bloodyad
 
 #configure tmux
 cd
