@@ -51,7 +51,7 @@ git clone https://github.com/S3cur3Th1sSh1t/PowerSharpPack.git
 
 cd 
 sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree gpp-decrypt pdfid wmi-client -y
-pip install bloodyad
+pip install bloodyad certipy-ad
 
 #configure tmux
 cd
