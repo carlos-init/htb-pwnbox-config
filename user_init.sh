@@ -61,7 +61,7 @@ sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree gpp
 pip install bloodyad pywhisker
 
 #install rusthound
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
 
 cargo install rusthound-ce
