@@ -1,5 +1,6 @@
 #!/bin/bash
 #This script is executed every time your instance is spawned.
+cd
 
 sudo apt update
 
