@@ -1,14 +1,7 @@
 #!/bin/bash
 #This script is executed every time your instance is spawned.
 cd
-
 sudo apt update
-
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source "$HOME/.cargo/env"
-
-cargo install rusthound-ce
-
 cd 
 mkdir tools
 cd tools
@@ -66,6 +59,12 @@ pip install impacket minikerberos
 cd 
 sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree gpp-decrypt pdfid wmi-client build-essential pkg-config libkrb5-dev libclang-dev -y
 pip install bloodyad pywhisker
+
+#install rusthound
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+
+cargo install rusthound-ce
 
 #configure tmux
 cd
