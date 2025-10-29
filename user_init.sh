@@ -55,6 +55,14 @@ git clone https://github.com/dirkjanm/PKINITtools
 mv PKINITtools pkinittools
 cd pkinittools
 pip install impacket minikerberos
+cd
+cd tools
+git clone https://github.com/Bashfuscator/Bashfuscator
+mv Bashfuscator bashfuscator
+cd bashfuscator
+pip3 install setuptools==65
+python3 setup.py install --user
+
 
 cd 
 sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree gpp-decrypt pdfid wmi-client build-essential pkg-config libkrb5-dev libclang-dev -y
