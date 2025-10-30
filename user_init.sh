@@ -16,6 +16,20 @@ mv chisel_1.10.1_linux_amd64 chisel
 chmod +x chisel
 cd
 cd tools
+mkdir ligolo
+cd ligolo
+mkdir windows
+cd windows
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8/ligolo-ng_agent_0.8_windows_amd64.zip
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8/ligolo-ng_proxy_0.8_windows_amd64.zip
+cd ..
+mkdir linux
+cd linux
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8/ligolo-ng_proxy_0.8_linux_amd64.tar.gz
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8/ligolo-ng_agent_0.8_linux_amd64.tar.gz
+
+cd
+cd tools
 mkdir peas
 cd peas
 wget https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh
