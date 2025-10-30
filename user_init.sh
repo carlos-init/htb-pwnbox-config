@@ -66,7 +66,7 @@ python3 setup.py install --user
 
 cd 
 sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree gpp-decrypt pdfid wmi-client build-essential pkg-config libkrb5-dev libclang-dev -y
-pip install bloodyad pywhisker
+pip install bloodyad pywhisker updog
 
 #install rusthound
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
