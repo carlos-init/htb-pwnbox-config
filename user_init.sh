@@ -61,6 +61,11 @@ cd pwdump
 wget https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip
 cd
 cd tools
+git clone https://github.com/ajread4/prefetcher.git
+cd prefetcher
+pip3 install -r requirements.txt
+cd
+cd tools
 git clone https://github.com/urbanadventurer/username-anarchy.git
 git clone https://github.com/kmahyyg/mremoteng-decrypt.git
 git clone https://github.com/S3cur3Th1sSh1t/PowerSharpPack.git
