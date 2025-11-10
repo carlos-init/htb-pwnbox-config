@@ -111,6 +111,4 @@ echo "bind -n M-Down select-pane -D" >> ~/.tmux.conf
 tmux source ~/.tmux.conf
 
 
-
-
-# git clone https://github.com/nicocha30/ligolo-ng.git
+sudo gunzip /usr/share/wordlists/rockyou.txt.gz
