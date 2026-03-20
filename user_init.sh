@@ -84,7 +84,7 @@ python3 setup.py install --user
 
 
 cd 
-sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree gpp-decrypt pdfid wmi-client build-essential pkg-config libkrb5-dev libclang-dev libevtx-utils -y
+sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree gpp-decrypt pdfid wmi-client build-essential pkg-config libkrb5-dev libclang-dev libevtx-utils chainsaw bloodhound -y
 pip install bloodyad pywhisker updog
 
 #install rusthound
