@@ -2,82 +2,70 @@
 #This script is executed every time your instance is spawned.
 cd
 sudo apt update
-cd 
-mkdir tools
-cd tools
-mkdir chisel
+cd /opt
+sudo mkdir chisel
 cd chisel
-wget https://github.com/jpillora/chisel/releases/download/v1.10.1/chisel_1.10.1_windows_amd64.gz
-gunzip chisel_1.10.1_windows_amd64.gz
-mv chisel_1.10.1_windows_amd64 chisel.exe
-wget https://github.com/jpillora/chisel/releases/download/v1.10.1/chisel_1.10.1_linux_amd64.gz
-gunzip chisel_1.10.1_linux_amd64.gz
-mv chisel_1.10.1_linux_amd64 chisel
-chmod +x chisel
-cd
-cd tools
-mkdir ligolo
+sudo wget https://github.com/jpillora/chisel/releases/download/v1.11.5/chisel_1.11.5_windows_amd64.zip
+sudo gunzip chisel_1.11.5_windows_amd64.zip
+sudo mv chisel_1.10.1_windows_amd64 chisel.exe
+sudo wget https://github.com/jpillora/chisel/releases/download/v1.11.5/chisel_1.11.5_linux_amd64.gz
+sudo gunzip chisel_1.11.5_linux_amd64.gz
+sudo mv chisel_1.10.1_linux_amd64 chisel
+sudo chmod +x chisel
+cd /opt
+sudo mkdir ligolo
 cd ligolo
-mkdir windows
+sudo mkdir windows
 cd windows
-wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8/ligolo-ng_agent_0.8_windows_amd64.zip
-wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8/ligolo-ng_proxy_0.8_windows_amd64.zip
+sudo wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.3/ligolo-ng_agent_0.8.3_windows_amd64.zip
+sudo wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.3/ligolo-ng_proxy_0.8.3_windows_amd64.zip
 cd ..
-mkdir linux
+sudo mkdir linux
 cd linux
-wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8/ligolo-ng_proxy_0.8_linux_amd64.tar.gz
-wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8/ligolo-ng_agent_0.8_linux_amd64.tar.gz
-
-cd
-cd tools
-mkdir peas
-cd peas
-wget https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh
-wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASx64.exe
-wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASx86.exe
-cd 
-cd tools
-mkdir printspoofer
+sudo wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.3/ligolo-ng_proxy_0.8.3_linux_amd64.tar.gz
+sudo wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.3/ligolo-ng_agent_0.8.3_linux_amd64.tar.gz
+cd /opt
+sudo mkdir peass
+cd peass
+sudo wget https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh
+sudo wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASx64.exe
+sudo wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASx86.exe
+cd /opt
+sudo mkdir printspoofer
 cd printspoofer
-wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe
-cd
-cd tools
-mkdir LaZagne
+sudo wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe
+cd /opt
+sudo mkdir LaZagne
 cd LaZagne
-wget https://github.com/AlessandroZ/LaZagne/releases/latest/download/LaZagne.exe -O LaZagne.exe
-cd
-cd tools
-mkdir kerbrute
+sudo wget https://github.com/AlessandroZ/LaZagne/releases/latest/download/LaZagne.exe -O LaZagne.exe
+cd /opt
+sudo mkdir kerbrute
 cd kerbrute
-go install github.com/ropnop/kerbrute@master
-cp ~/go/bin/kerbrute .
-cd
-cd tools
-git clone https://github.com/Flangvik/SharpCollection.git
-mv SharpCollection sharpcollection
-git clone https://github.com/urbanadventurer/username-anarchy.git
-mkdir pwdump
+sudo go install github.com/ropnop/kerbrute@master
+sudo cp ~/go/bin/kerbrute .
+cd /opt
+sudo git clone https://github.com/Flangvik/SharpCollection.git
+sudo mv SharpCollection sharpcollection
+sudo git clone https://github.com/urbanadventurer/username-anarchy.git
+sudo mkdir pwdump
 cd pwdump
-wget https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip
-cd
-cd tools
-git clone https://github.com/ajread4/prefetcher.git
+sudo wget https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip
+cd /opt
+sudo git clone https://github.com/ajread4/prefetcher.git
 cd prefetcher
 pip3 install -r requirements.txt
-cd
-cd tools
-git clone https://github.com/urbanadventurer/username-anarchy.git
-git clone https://github.com/kmahyyg/mremoteng-decrypt.git
-git clone https://github.com/S3cur3Th1sSh1t/PowerSharpPack.git
-mv PowerSharpPack powersharppack
-git clone https://github.com/dirkjanm/PKINITtools
-mv PKINITtools pkinittools
+cd /opt
+sudo git clone https://github.com/urbanadventurer/username-anarchy.git
+sudo git clone https://github.com/kmahyyg/mremoteng-decrypt.git
+sudo git clone https://github.com/S3cur3Th1sSh1t/PowerSharpPack.git
+sudo mv PowerSharpPack powersharppack
+sudo git clone https://github.com/dirkjanm/PKINITtools
+sudo mv PKINITtools pkinittools
 cd pkinittools
 pip install impacket minikerberos
-cd
-cd tools
-git clone https://github.com/Bashfuscator/Bashfuscator
-mv Bashfuscator bashfuscator
+cd /opt
+sudo git clone https://github.com/Bashfuscator/Bashfuscator
+sudo mv Bashfuscator bashfuscator
 cd bashfuscator
 pip3 install setuptools==65
 python3 setup.py install --user
