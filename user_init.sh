@@ -70,9 +70,9 @@ cd bashfuscator
 pip3 install setuptools==65
 python3 setup.py install --user
 cd /opt
-sudo git clone https://github.com/pasquini-dario/LLMmap
-cd LLMmap/
-pip3 install -r requirements.txt
+#sudo git clone https://github.com/pasquini-dario/LLMmap
+#cd LLMmap/
+#pip3 install -r requirements.txt
 
 
 cd 
