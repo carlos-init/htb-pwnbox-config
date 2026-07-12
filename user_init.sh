@@ -52,8 +52,8 @@ cd pwdump
 sudo wget https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip
 cd /opt
 sudo git clone https://github.com/ajread4/prefetcher.git
-cd prefetcher
-pip3 install -r requirements.txt
+# cd prefetcher
+# pip3 install -r requirements.txt
 cd /opt
 sudo git clone https://github.com/urbanadventurer/username-anarchy.git
 sudo git clone https://github.com/kmahyyg/mremoteng-decrypt.git
@@ -61,14 +61,14 @@ sudo git clone https://github.com/S3cur3Th1sSh1t/PowerSharpPack.git
 sudo mv PowerSharpPack powersharppack
 sudo git clone https://github.com/dirkjanm/PKINITtools
 sudo mv PKINITtools pkinittools
-cd pkinittools
-pip install impacket minikerberos
+# cd pkinittools
+# pip install impacket minikerberos
 cd /opt
 sudo git clone https://github.com/Bashfuscator/Bashfuscator
 sudo mv Bashfuscator bashfuscator
-cd bashfuscator
-pip3 install setuptools==65
-python3 setup.py install --user
+# cd bashfuscator
+# pip install setuptools==65
+# python3 setup.py install --user
 cd /opt
 #sudo git clone https://github.com/pasquini-dario/LLMmap
 #cd LLMmap/
@@ -77,7 +77,8 @@ cd /opt
 
 cd 
 sudo apt install eyewitness ca-certificates gh rsyslog exiftool ntpdate tree gpp-decrypt pdfid wmi-client build-essential pkg-config libkrb5-dev libclang-dev libevtx-utils chainsaw bloodhound -y
-pip install bloodyad pywhisker updog
+pipx install bloodyad pywhisker updog
+pipx ensurepath
 
 #install rusthound
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
